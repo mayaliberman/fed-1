@@ -43,7 +43,8 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    
+    color: pink;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -57,7 +58,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/herzeliya-view.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -76,32 +77,81 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+.experience-header {
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+ background: url('images/herzeliya-view.jpg') no-repeat top center ;
+ background-size: 1920px 400px;
+}
 .tag {
   background-color: #efefef;
   color: black;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: pink;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #E3E4DE;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+
+a.project-link {
+  font-weight: bold;
+  color: #4D8B52;
+  line-height: 2em;
+}
+a.project-link:hover {
+  color: #46C0EA;
 }
 
+a.project-link:visited {
+  color: #E7C480;
+}
+.card:hover {
+  border-color: #E77BAA;
+}
+
+.address {
+  font-weight: bold;
+  color: #46C0EA;
+  line-height: 2em;
+}
+.contact-social {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.contact-card .profile-image {
+  margin-top: -25px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -110,14 +160,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #E77BAA;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #46C0EA;
 }
 
 footer {
@@ -177,6 +227,10 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .flex-experience {
+    flex-wrap: wrap;
   }
 
   header {
