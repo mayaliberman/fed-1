@@ -84,6 +84,7 @@ header .profile-image:hover {
   align-items: center;
  background: url('images/herzeliya-view.jpg') no-repeat top center ;
  background-size: 1920px 400px;
+  min-height: 300px;
 }
 .tag {
   background-color: #efefef;
@@ -100,7 +101,7 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  /* max-width: 90%; */
   text-align: left;
   background: #E3E4DE;
   border-bottom: 4px solid #ccc;
@@ -128,6 +129,16 @@ a.project-link:visited {
   font-weight: bold;
   color: #46C0EA;
   line-height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-image-contact {
+  width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px inset #E77BAA;
+    transition: all .5s;
 }
 .contact-social {
   display: flex;
@@ -138,9 +149,11 @@ a.project-link:visited {
 
 .contact-card {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
-  width: 600px;
+  width: 400px;
+  text-align: center;
 }
 
 .contact-card .profile-image {
@@ -153,11 +166,17 @@ a.project-link:visited {
   transition: all .5s;
 }
 
+.contact-title {
+  text-align: center;
+}
+
 .group-image {
-  width: 400px;
-  height: 300px;
-  margin-left: 9px;
+  width: 100%;
+  display: inline-block;
+  /* margin: auto auto; */
+  
   border: 3px inset #E77BAA;
+
 }
 ul.skills {
   padding: 0;
@@ -237,6 +256,10 @@ a.social:hover {
       margin: 0 auto;
   }
 
+  .card {
+    width: 400px;
+  }
+
   .flex-experience {
     flex-wrap: wrap;
   }
@@ -245,9 +268,7 @@ a.social:hover {
     min-height: 470px;
   }
 
-  .experience-header {
-    min-height: 470px;
-  }
+  
 
   .nav {
     max-width: 1200px;
